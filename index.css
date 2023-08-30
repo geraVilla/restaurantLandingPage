@@ -1,0 +1,1713 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+/*.opening{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background-image: url(./openingImages/jarritos-mexican-soda-bA3VwdUYduY-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}*/
+.opening{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./openingImages/jarritos-mexican-soda-bA3VwdUYduY-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.topBar{
+     
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+.restaurantName{
+    z-index: 99;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 30px;
+}
+.allSections{
+    display: flex;
+    flex-direction: row;
+    z-index: 99;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+#about{
+    margin-left: 30px;
+}
+#menu{
+    margin-left: 30px;
+}
+.allSocials{
+    display: flex;
+    flex-direction: row;
+    z-index: 99;
+    margin-right: 30px;
+
+}
+#insta{
+    height: 35px;
+    width: 35px;
+}
+#tiktok{
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+
+}
+#facebook{
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+}
+
+.mainMessage{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sombreroContainer{
+    height: 140px;
+    width: 140px;
+    z-index: 99;
+}
+#sombrero{
+    height: 100%;
+    width: 100%;
+}
+.message{
+    z-index: 99;
+}
+.message h1{
+    
+    color: white;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 80px;
+}
+
+.twoButtons{
+    height: 100px;
+    width: 500px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.orderOnlineButton{
+    z-index: 99;
+    height: 50px;
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+
+}
+.orderOnlineButton:hover{
+    /*background-color: #f3401c;*/
+    background-color: #028A0F;
+}
+.orderOnlineButton p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.seeOurMenuButton{
+    z-index: 99;
+    height: 50x;
+    width: 180px;
+    border: 5px solid white;
+    /*background-color: #f3401c;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+.seeOurMenuButton:hover{
+    /*background-color: #f3401c;*/
+    background-color: #028A0F;
+}
+.seeOurMenuButton p{
+    font-size: 700;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.scrollDownContainer{
+    margin-top: 90px;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.scrollDownContainer p{
+    z-index: 99;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    animation: fade 2s infinite ease-in-out;
+
+}
+#scrolldown{
+    z-index: 99;
+    height: 70px;
+    width: 70px;
+    animation: fade 2s infinite ease-in-out;
+}
+@keyframes fade {
+    0%, 100%{ opacity: 0;}
+    50%{opacity: 1;}
+}
+
+#burritoOne{
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 10%;
+    height: 70px;
+    width: 70px;
+}
+
+#burritoTwo{
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 90%;
+    height: 20px;
+    width: 20px;
+    transform: rotate(-30deg);
+}
+#burritoThree{
+    position: absolute;
+    z-index: 99;
+    top: 70%;
+    left: 90%;
+    height: 40px;
+    width: 40px;
+    transform: rotate(60deg);
+
+}
+
+#burritoFour{
+    position: absolute;
+    z-index: 99;
+    top: 70%;
+    left: 25%;
+    height: 30px;
+    width: 30px;
+    transform: rotate(-20deg);
+}
+
+#burritoFive{
+
+    position: absolute;
+    z-index: 99;
+    top: 20%;
+    left: 23%;
+    height: 25px;
+    width: 25px;
+    transform: rotate(35deg);
+
+}
+
+#burritoSix{
+    position: absolute;
+    z-index: 99;
+    top: 20%;
+    right: 20%;
+    height: 30px;
+    width: 30px;
+    transform: rotate(-60deg);
+
+}
+#burritoSeven{
+    position: absolute;
+    z-index: 99;
+    top: 80%;
+    right: 30%;
+    height: 25px;
+    width: 25px;
+    transform: rotate(80deg);
+}
+
+/*.ourStorySection{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}*/
+
+/*.temp{
+    width: 100%;
+    height: 500px;
+}
+
+.aguasFrescasSection{
+    width: 100%;
+    height: 600px;
+    background-image: url(./painted-wooden-texture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.aguasFrescasImages{
+    position: relative;
+    width: 700px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.drinkContainer{
+    position: absolute;
+    width: 300px;
+    height: 490px;
+    transform: rotate(-10deg);
+}
+#drink{
+    width: 100%;
+    height: 100%;
+}
+
+.allFlavors{
+    width: 600px;
+    height: 600px;
+    
+}
+
+.aguasFrescasTitle{
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    
+}
+.aguasFrescasTitle h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.flavor{
+    height: 70px;
+    width: 70px;
+}
+.flavorContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.seeMenuButton{
+    background-color: brown;
+    color: white;
+    height: 60px;
+    width: 100px;
+    border-radius: 10px;
+}*/
+
+
+
+
+.introToFoodContainer{
+    
+    width: 100%;
+    height: 800px;
+    position: relative;
+    /*background-image: url(./startOfFoodImages/sean-benesh-5yzlsfYj44U-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    filter: grayscale(100%);
+    z-index: 1;*/
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.introToFoodContainer::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(./startOfFoodImages/sean-benesh-5yzlsfYj44U-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    /*filter: grayscale(100%);*/
+    z-index: -1;
+}
+
+.introToFoodOverlay{
+    z-index: 98;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: #ed3333;*/
+    /*background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);*/
+    background-color: rgba(0,0,0,0.5);
+    
+    /*opacity: 0.5;*/
+
+}
+
+
+#foodMessage{
+    z-index: 99;
+    position: absolute;
+    color: white;
+    font-family: 'Nerko One', cursive;
+    font-size: 100px;
+}
+
+.butterFlyContainer{
+    position: absolute;
+    z-index: 99;
+    top: 15%;
+    left: 70%;
+    height: 300px;
+    width: 300px;
+}
+#startOfFoodButterfly{
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+
+.aguasFrescasSection{
+    width: 100%;
+    height: 750px;
+    background-image: url(./aguasFrescasSection/design-space-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.aguasFrescasTitle{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-family: 'Monserrat', sans-serif;
+    color: white;
+    font-size: 50px;
+}
+.drinkMenuTitle{
+    margin-top: 0px;
+    font-family: 'Monserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+
+.allOptions{
+    display: flex;
+    flex-direction: column;
+}
+.oneDrink{
+    display: flex;
+    flex-direction: row;
+    /*background-color: red;*/
+    width: 430px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.flavorAndIcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flavorAndIcon p{
+    font-family: 'Lilita One', cursive;
+    /*color: white;*/
+    color: #FAFEFD;
+    font-size: 30px;
+    
+}
+
+.fruitIcon{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
+
+.price{
+    font-family: 'Lilita One', cursive;
+    color: white;
+    font-size: 30px;
+}
+
+.drinkContainer{
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    z-index: 99;
+    top: 30%;
+    left: 5%;
+}
+#drink{
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+
+}
+
+.palmTreeContainer{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 99;
+
+}
+#palmTree{
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    object-fit: cover;
+}
+
+.redFlowerOne{
+    position: absolute;
+    z-index: 99;
+    height: 30px;
+    width: 30px;
+    top: 40%;
+    left: 5%;
+}
+.redFlowerTwo{
+    position: absolute;
+    z-index: 99;
+    height: 10px;
+    width: 10px;
+    top: 10%;
+    left: 60%;
+
+}
+
+.redFlowerThree{
+    position: absolute;
+    z-index: 99;
+    height: 60px;
+    width: 60px;
+    top: 40%;
+    left: 80%;
+
+}
+
+.redFlowerFour{
+    position: absolute;
+    z-index: 99;
+    height: 40px;
+    width: 40px;
+    top: 20%;
+    left: 30%;
+
+}
+
+.patternContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.line{
+    width: 100%;
+    height: 2px;
+    /*background-color: #FFD700;*/
+    background-color: rgba(255, 217, 0, 0.7);
+
+
+}
+.actualPatternContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /*background-color: #028A0F;*/
+    background-color: #eb7b31;
+    
+}
+.diamond{
+    height: 30px;
+    width: 30px;
+}
+.time{
+    height: 30px;
+    width: 30px;
+}
+
+.secondPatternContainer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sunContainer{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    z-index: 99;
+}
+
+#sun{
+    height: 100%;
+    width: 100%;
+
+}
+
+#lastFlavor{
+    position: relative;
+}
+.chalkPieceContainer{
+    position: absolute;
+    top: -10px;
+    right: -78px;
+    height: 70px;
+    width: 70px;
+}
+#chalkPiece{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/*.topLeftSideImages{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+figure{
+    
+
+    width: 140px;
+    height: 140px;
+    position: relative;
+    background-color: #eaeaea;
+    padding: 13px 13px 50px 13px;
+}
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+figcaption{
+    font-family: 'Caveat Brush', cursive;
+
+    font-size: 12px;
+    color: #2c2c2c;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#firstImage{
+    transform: rotate(18deg);
+}
+
+#firstImage:before,
+#firstImage:after{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 100px;
+    background-color: rgba(102, 102, 102, 0.6);
+    transform: rotate(-40deg);
+}
+#firstImage:before{
+    top: 3px;
+    left: -30px;
+}
+#firstImage:after{
+    bottom: 3px;
+    right: -30px;
+}
+
+
+
+#secondImage:before,
+#secondImage:after{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 100px;
+    background-color: rgba(102, 102, 102, 0.6);
+    transform: rotate(-40deg);
+}
+#secondImage:before{
+    top: 3px;
+    left: -30px;
+}
+#secondImage:after{
+    bottom: 3px;
+    right: -30px;
+}
+
+#thirdImage{
+    transform: rotate(-18deg);
+}
+
+#thirdImage:before,
+#thirdImage:after{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 100px;
+    background-color: rgba(102, 102, 102, 0.6);
+    transform: rotate(-40deg);
+}
+#thirdImage:before{
+    top: 3px;
+    left: -30px;
+}
+#thirdImage:after{
+    bottom: 3px;
+    right: -30px;
+}
+
+.bottomLeftSideImages{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.drinkContainerImage{
+    height: 380px;
+    width: 380px;
+}
+#transparentDrink{
+    width: 100%;
+    height: 100%;
+}*/
+
+
+
+
+/*.ourStorySection{
+    width: 100%;
+    
+    
+}
+
+.topSection{
+    width: 100%;
+    height: 400px;
+    background-color: aqua;
+}
+.bottomSection{
+    width: 100%;
+    height: 500px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.bottomTextContainer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+.text{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100px;
+    width: 380px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.bottomImageContainer{
+    width: 700px;
+    height: 500px;
+    margin-right: 80px;
+}
+#restaurantPhoto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.openSinceContainer{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 90%;
+    left: 20%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#date{
+    position: absolute;
+    top: -30%;
+    left: 5%;
+    font-size: 150px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    color: rgb(0, 102, 43);
+}
+#since{
+    position: absolute;
+    z-index: 99;
+    top: 25%;
+    left: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}*/
+
+
+.ourStorySection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ourStoryTopSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    justify-content: space-between;
+    margin-top: 180px;
+}
+.topSectionText{
+    margin-top: 20px;
+    margin-left: 110px;
+    width: 380px;
+    height: 520px;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    position: relative;
+    
+}
+
+.ourOriginContainer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+   
+
+}
+.ourOriginContainer p{
+    font-family: 'Lobster', cursive;
+
+    color: #f5a71c;
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#cactus{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+.topSectionImageContainer{
+    width: 870px;
+    height: 550px;
+    /*margin-left: 40px;*/
+
+}
+
+#michoacan{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.michoacanTitle{
+    /*color: #3CB043;*/
+    /*color: #028A0F;*/
+    /*color: #014b5f;*/
+    /*color: #f6ae33;*/
+    color: #1a7514;
+    /*color: #ccc629;*/
+    /*font-family: 'Montserrat', sans-serif;*/
+    /*font-family: 'Anton', sans-serif;*/
+    font-family: 'Lilita One', cursive;
+
+    
+
+    
+
+    
+}
+
+.actualTopSectionText{
+    width: 320px;
+    /*background-color: blue;*/
+    color: #520c0c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 2;
+
+}
+
+.topSectionTitleContainer{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;
+    align-items: center;*/
+}
+
+.aboutUsButtonContainer{
+    margin-top: 20px;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #FED700;*/
+    /*background-color: #028A0F;*/
+    background-color: #f5a71c;
+    cursor: pointer;
+    
+    /*background-color: #f6ae33;*/
+}
+
+.michoacanTitle:nth-child(1){
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: 99;
+    font-size: 45px;
+    font-weight: bolder;
+}
+.michoacanTitle:nth-child(2){
+    font-size: 45px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: 99;
+}
+.michoacanTitle:nth-child(3){
+    font-size: 45px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: 99;
+}
+.aboutUsButtonContainer p{
+    /*color: #520c0c;*/
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+    
+}
+
+.multipleButterflyContainer{
+    position: absolute;
+    top: 430px;
+    left: 210px;
+    height: 70px;
+    width: 70px;
+    z-index: 1;
+    transform: rotate(20deg);
+}
+
+#multipleButterflies{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.ourStoryBottomSection{
+    margin-top: 190px;
+    margin-bottom: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    justify-content: space-between;
+
+}
+
+.bottomSectionImageContainer{
+
+    width: 870px;
+    height: 550px;
+    /*margin-right: 40px*/
+    position: relative;
+
+}
+#restaurantImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.bottomSectionText{
+    /*background-color: red;*/
+    margin-top: 30px;
+    margin-right: 70px;
+    width: 380px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.ourStoryContainer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.ourStoryContainer p{
+    font-family: 'Lobster', cursive;
+    color: #f5a71c;
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+.bottomSectionTitleContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.heart{
+    color: #1a7514;
+    font-family: 'Lilita One', cursive;
+}
+
+.heart:nth-child(1){
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: 99;
+    font-size: 45px;
+    font-weight: bolder;
+}
+.heart:nth-child(2){
+    font-size: 45px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: 99;
+}
+
+
+.actualBottomSectionText{
+    width: 320px;
+    color: #520c0c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.checkOutOurMenuButtonContainer{
+    margin-top: 20px;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5a71c;
+    cursor: pointer;
+}
+
+.checkOutOurMenuButtonContainer p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pinataAndBubbleContainer{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: -190px;
+    top: -170px;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#pinata{
+    /*position: absolute;*/
+    height: 200px;
+    width: 200px;
+    /*right: -80px;
+    top: -50px;*/
+    transform: scaleX(-1);
+}
+
+#bubble{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+}
+
+.bubbleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    /*background-color: #f6ae33;*/
+    position: absolute;
+    top: 15px;
+    right: -75px;
+}
+
+#bubbleText{
+    color: #f5a71c;
+    position: absolute;
+    top: 16%;
+    transform: rotate(-5deg);
+    font-family: 'Gochi Hand', cursive;
+    font-size: 40px;
+
+    
+}
+
+
+
+
+
+/*START OF MENU SECTION*/
+.menuSection{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menuTextSection{
+    height: 700px;
+    /*width: 400px;*/
+    /*width: 30%;*/
+    width: 480px;
+    /*background-color: red;*/
+    margin-left: 32px;
+}
+
+.allMenuItemsSection{
+    height: 700px;
+    /*width: 900px;*/
+    /*width: 65%;*/
+    width: 900px;
+    /*background-color: blue;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.firstRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.imageAndName{
+    height: 350px;
+    width: 300px;
+    /*background-color: #f6ae33;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.foodMenuContainer{
+    width: 280px;
+    height: 250px;
+
+}
+#burrito{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#taco{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#tortas{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.foodNameContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: flex-start;*/
+    color: #1a7514;
+    font-family: 'Lilita One', cursive;
+
+}
+.foodNameContainer h2{
+    margin-left: 10px;
+}
+.foodNameContainer h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.secondRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#seafood{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#kidsmeal{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.lastBox{
+    width: 280px;
+    height: 250px;
+    background-color: #028A0F;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.lastBox h1{
+    color: white;
+    font-family: 'Nerko One', cursive;
+    font-size: 45px;
+}
+
+.ourMenuTitleContainer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.ourMenuTitleContainer p{
+    font-family: 'Lobster', cursive;
+
+    color: #f5a71c;
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.menuTitles{
+    display: flex;
+    flex-direction: column;
+    color: #1a7514;
+    font-family: 'Lilita One', cursive;
+}
+.menuTitle:nth-child(1){
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 45px;
+}
+.menuTitle:nth-child(2){
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 45px;
+}
+
+.talkAboutMenuSection{
+    margin-top: 20px;
+    color: #520c0c;
+    line-height: 2;
+    width: 440px;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 500;
+    font-size: 17px;
+}
+
+.viewActualMenuContainer{
+    margin-top: 20px;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    background-color: #f5a71c;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.viewActualMenuContainer p{
+    color: white;
+    font-family: 'Monserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/*footer section*/
+
+.lastSection{
+    width: 100%;
+    height: 400px;
+    /*background-color: rgba(14,20,54,255);*/
+    background-color: #f5a71c;
+    display: flex;
+    flex-direction: row;
+}
+
+.footerTitleAndImage{
+    height: 400px;
+    width: 35%;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footerTitleAndImage h1{
+    margin-top: 70px;
+    margin-bottom: 0px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#hat{
+    margin-top: 10px;
+    height: 150px;
+    width: 150px;
+}
+
+.footerSectionContent{
+    height: 400px;
+    width: 65%;
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.visitUsAndContactInformationSection{
+    margin-top: 30px;
+
+}
+
+.visitUsLocation{
+    height: 120px;
+    width: 220px;
+    /*background-color: blueviolet;*/
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.visitUsLocation h3{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+    
+}
+
+.location{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    width: 180px;
+    height: 50px;
+    /*background-color: yellowgreen;*/
+}
+
+.emailAndPhoneSection{
+    height: 200px;
+    width: 220px;
+    /*background-color: blue;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+   
+}
+.email h3{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+}
+.email p{
+    margin-top: 7px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.phone{
+    display: flex;
+    flex-direction: column;
+    
+}
+.phone h3{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+}
+.phone p{
+    margin-top: 7px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.hoursSection{
+    margin-top: 30px;
+    width: 200px;
+    height: 300px;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#hours{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+#closed{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+#hoursTitle{
+    margin-bottom: 0px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+#daysOpen{
+    margin-bottom: 0px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#daysClosed{
+    margin-bottom: 0px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topBarContent{
+    margin-top: 30px;
+    height: 300px;
+    width: 200px;
+    /*background-color: #63A4FF;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*Google review section*/
+
+/*.googleReviewSection{
+    width: 100%;
+    height: 600px;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgb(239, 239, 239);
+    
+}
+
+
+
+
+.swiper{
+    width: 80%;
+    
+}
+
+
+.cardOne{
+   
+    background-color: #028A0F;
+}
+
+.card{
+    height: 300px;
+    width: 380px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card-content{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+
+.star{
+    height: 30px;
+    width: 30px;
+}
+
+.reviewName{
+    font-family: 'Monserrat', sans-serif;
+    margin-bottom: 5px;
+}
+.actualReview{
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+.timePublished{
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 300;
+}*/
+
+
+/* NEW GOOGLE REVIEW SECTION*/
+
+.googleReviewSection{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #F6F6F6;*/
+    /*background-color: white;*/
+    position: relative;
+
+    
+    
+}
+
+.actualReviews{
+    z-index: 99;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.review{
+    z-index: 99;
+    height: 350px;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /*border: 1px solid rgba(0,0,0,0.2);*/
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /*background-color: #028A0F;*/
+    background-color: #298f44;
+    
+}
+
+.firstReviewTitle{
+    z-index: 99;
+    margin-top: 60px;
+    font-family: 'Lilita One', sans-serif;
+    margin-bottom: 0px;
+    color: #520c0c;
+}
+
+.secondReviewTitle{
+    font-family: 'Lilita One', sans-serif;
+    margin-top: 0px;
+    color: #520c0c;
+}
+
+.review:nth-child(2){
+    margin-left: 27px;
+    margin-right: 27px;
+}
+
+.reviewName{
+    margin-left: 27px;
+    color: white;
+    font-family: 'Lilita One', sans-serif;
+
+}
+
+.starsContainer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 27px;
+
+}
+
+.actualReview{
+    margin-left: 27px;
+    width: 230px;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+    color: white;
+}
+
+.greenStar{
+    height: 35px;
+    width: 35px;
+}
+
+.datePosted{
+    margin-left: 27px;
+    font-family: 'Monserrat', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: white;
+}
+
+.fakeButtons{
+    margin-top: 13px;
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    justify-content: space-evenly;
+}
+.button{
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.paintContainer{
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    width: 300px;
+    height: 300px;
+}
+#paint{
+    transform: scaleX(-1) rotate(30deg);
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+
